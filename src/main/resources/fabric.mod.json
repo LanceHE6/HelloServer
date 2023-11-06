@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "helloserver",
+  "version": "${version}",
+  "name": "HelloServer-fabric-1.20.2",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Administrator/HelloServer-fabric-1.20.2"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/helloserver/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.hycer.helloserver.client.HelloServer_fabric_1_20_2Client"
+    ],
+    "main": [
+      "com.hycer.helloserver.HelloServer_fabric_1_20_2"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
